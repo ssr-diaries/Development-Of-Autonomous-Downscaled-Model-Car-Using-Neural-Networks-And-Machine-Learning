@@ -37,4 +37,18 @@ After segregating the images into their corresponding class folders, the neural 
 
 Once we have the trained model, the RC car is run autonomously using ```autonomous.py``` which takes an optional argument for the trained model; default will use the latest model in the ```optimized_thetas``` folder. 
 
-Please feel free to post your doubts on code through my linkedin link https://www.linkedin.com/in/uvais-karni-531a06147/
+Please feel free to post your doubts on code through my linkedin link linkedin.com/in/shreyas-ramachandran-srinivasan-565638117/
+
+CONTROLLING THE CAR
+
+The controlling process consists of 4 parts: 
+ The sensor interface layer includes various programming modules worried about getting and time stamping all sensor information. 
+ The discernment layer maps sensor information into inward models. The essential module in this layer is the PI camera, which decides the vehicle's introduction and area. 
+
+Two distinct modules enable auto to explore in view of ultrasonic sensor and the camera. A street discovering module utilizes the PI camera determined pictures to discover the limit of a street, so the vehicle can focus itself along the side. At last, a surface evaluation module separates parameters of the present street to determine safe vehicle speeds.  The control layer is in charge of managing the controlling, throttle, and brake reaction of the vehicle. A key module is the way organizer, which sets the direction of the vehicle in controlling and speed space.  The vehicle interface layer fills in as the interface to the robot's drive-by-wire framework. It contains all interfaces to the vehicle's brakes, throttle, and controlling wheel. It likewise includes the interface to the vehicle's server, a circuit that manages the physical capacity to a significant number of the framework segments.
+
+In the proposed system, the raspberry Pi is used to control the L293D board, which allows motors to be controlled through the raspberry pi through the pulses provided by it. Based on the images obtained, raspberry pi provides PWM pulses tocontrol the L293D controller. L293D is a 16 Pin Motor Driver IC as shown in Figure 9. This is designed to provide bidirectional drive currents at voltages from 5 V to 36 V. Fig 9 L293D Breakout Board It also allows the speed of the motor to be controlled using PWM. It’s a series of high and low. The Duration of high and low determine the voltage supplied to the motor and hence the speed of the motor.
+
+PWM Signals:
+
+The DC motor speed all in all is specifically relative to the supply voltage, so if lessen the voltage from 9 volts to 4.5 volts, then our speed turn out to be half of what it initially had. Yet, for changing the speed of a dc motor we can't continue changing the supply voltage constantly. The speed controller PWM for a DC motor works by changing the normal voltage provided to the motor.The input signals we have given to PWM controller may be a simple or computerized motion as per the outline of the PWM controller. The PWM controller acknowledges the control flag and modifies the obligation cycle of the PWM motion as indicated by the prerequisites. In these waves frequency is same but the ON and OFF times are different. Recharge power bank of any capacity, here, 2800 mAH is used (operating voltage of 5V DC), can be used to provide supply to central microcontroller. The microcontroller used will separate and supply the required amount of power to each hardware component. This battery power pack is rechargeable and can get charged and used again and again.
