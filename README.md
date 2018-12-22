@@ -1,4 +1,10 @@
 # Development-Of-Autonomous-Downscaled-Model-Car-Using-Neural-Networks-And-Machine-Learning-
+
+Please feel free to contact me through linkedin if you have any doubts regarding the project: https://linkedin.com/in/shreyas-ramachandran-srinivasan-565638117/
+
+To see photos and videos from presentation/demo, visit: https://ssr1996.wixsite.com/shreyas-ssr/projects-patents
+
+
 Machine learning using convolution neural network
 
 Required:
@@ -37,7 +43,7 @@ After segregating the images into their corresponding class folders, the neural 
 
 Once we have the trained model, the RC car is run autonomously using ```autonomous.py``` which takes an optional argument for the trained model; default will use the latest model in the ```optimized_thetas``` folder. 
 
-Please feel free to post your doubts on code through my linkedin : linkedin.com/in/shreyas-ramachandran-srinivasan-565638117/
+
 
 CONTROLLING THE CAR
 
